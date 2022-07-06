@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
+import com.qa.pages.AddEmpPages;
 import com.qa.pages.LoginPages;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -26,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class TestBase {
 	WebDriver driver;
 	LoginPages LoginOR;
-	
+	AddEmpPages AddEmpOR;
 	FileInputStream fileLoc;
 	Properties prop;
 	JavascriptExecutor Js;
@@ -58,6 +59,7 @@ public class TestBase {
 		expWait = new WebDriverWait(driver,40);
 		
 		LoginOR = new LoginPages(driver);
+		AddEmpOR = new AddEmpPages(driver);
 		sAssert = new SoftAssert();
 		
 		Js = (JavascriptExecutor)driver;
