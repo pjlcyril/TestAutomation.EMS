@@ -10,7 +10,8 @@
 		<parameter name="Browser" value="Chrome"></parameter>
 		<parameter name="Url" value="https://www.ems.in/"></parameter>
 		<classes>
-			<class name="com.qa.testscripts.TC_EMSLogin_001" />			
+			<class name="com.qa.testscripts.TC_AddEmp_001" />	
+			<class name="com.qa.testscripts.TC_AddEmp_002" />			
 		</classes>
 	</test>
 </suite> <!-- Suite -->
